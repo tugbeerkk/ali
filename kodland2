@@ -1,0 +1,13 @@
+import random
+
+characters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+while (x == int):
+ x = int(input("Şifreniz ne kadar uzun olsun: "))
+
+sifre = ""
+for i in range(x):
+    y = random.randint(0, len(characters) - 1)
+    sifre += characters[y]
+
+print("Oluşturulan şifre:", sifre)
